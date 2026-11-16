@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="外送員新手入門：小安整理的兼職跑單申請準備、跑單心得與 Uber Eats 推薦連結。本站為個人頁面，非官方網站。">
+  <meta name="description" content="外送員新手入門：小安整理的下班後兼職跑單申請準備、腳踏車跑單心得，以及 Uber Eats、Lalamove 推薦連結。本站為個人頁面，非官方網站。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="外送員新手入門｜小安的外送日記">
-  <meta property="og:description" content="兼職跑單怎麼開始、申請要準備什麼、新手跑單心得，附 Uber Eats 推薦連結。">
+  <meta property="og:description" content="下班後兼職跑單怎麼開始、申請要準備什麼、腳踏車跑單心得，附 Uber Eats 與 Lalamove 推薦連結。">
   <meta property="og:image" content="https://firsty1107-ai.github.io/rider-guide/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -199,7 +199,7 @@
       color: var(--muted);
     }
 
-    .scooter {
+    .bike {
       margin: 2rem auto 0;
       width: min(100%, 22rem);
     }
@@ -306,8 +306,12 @@
       font-size: 0.95rem;
     }
 
+    .referral-intro {
+      margin-bottom: 1.2rem;
+    }
+
     .referral {
-      margin-top: 2.4rem;
+      margin-top: 0;
       background: var(--bg-deep);
       color: #f8efe4;
       border-radius: 1.5rem;
@@ -318,6 +322,12 @@
     .referral h2 { color: #fffaf3; }
     .referral p { color: #d7ccc0; }
     .referral .fine { margin-top: 0.85rem; font-size: 0.85rem; color: #cbbbaa; }
+    .referral + .referral { margin-top: 1rem; }
+    .referral .code {
+      color: #fffaf3;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
 
     .faq details {
       background: var(--paper);
@@ -371,12 +381,16 @@
 <body>
   <script>
     const REFERRAL = {
-      UBEREATS_REFERRAL_LINK: "https://www.uber.com/signup/drive/deliver/?invite_code=947z4b1"
+      UBEREATS_REFERRAL_LINK: "https://www.uber.com/signup/drive/deliver/?invite_code=947z4b1",
+      LALAMOVE_REFERRAL_LINK: "https://lalamove-driver.onelink.me/zfl4/zzqvrvgv?u=2&rc=23DBWF&fromShare=1&refer_platform=app"
     };
 
     document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll("[data-ref='ubereats']").forEach((el) => {
         el.setAttribute("href", REFERRAL.UBEREATS_REFERRAL_LINK);
+      });
+      document.querySelectorAll("[data-ref='lalamove']").forEach((el) => {
+        el.setAttribute("href", REFERRAL.LALAMOVE_REFERRAL_LINK);
       });
     });
   </script>
@@ -386,10 +400,11 @@
       <a class="brand" href="#top">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="6.5" cy="17" r="2.2"/>
-            <circle cx="17.5" cy="17" r="2.2"/>
-            <path d="M8.7 17h6.2M4 17H3l2.2-7.2A1.5 1.5 0 0 1 6.6 8.7H12l1.8 5.2h3.2a2 2 0 0 1 1.9 1.4L19.5 17"/>
-            <path d="M12 8.7V6.4h3.2"/>
+            <circle cx="6" cy="16.5" r="2.4"/>
+            <circle cx="18" cy="16.5" r="2.4"/>
+            <path d="M6 16.5h4.2L13.8 9h3.4"/>
+            <path d="M10.2 16.5 13.8 9l4.2 7.5"/>
+            <path d="M13.8 9V6.6h3.2"/>
           </svg>
         </span>
         外送員新手入門
@@ -401,29 +416,35 @@
   <main id="top">
     <div class="hero">
       <div class="wrap">
-        <p class="eyebrow">週末兼職・彈性工時</p>
+        <p class="eyebrow">下班後兼職・腳踏車跑單</p>
         <h1>想利用空檔跑外送？先看這份老實的新手筆記</h1>
-        <p class="lead">我是小安，平常在週末跑單，活動範圍多半在三重和台北西附近。這頁把申請前要準備的東西，以及我實際跑下來的心得整理給你，方便你決定要不要開始。</p>
+        <p class="lead">我是小安，下班後騎腳踏車兼職跑單，車是向 Uber Bike 租的。Uber Eats 和 Lalamove 哪邊有單就跑哪邊，活動範圍多半在三重和台北西附近。這頁把申請前要準備的東西，以及我實際跑下來的心得整理給你，方便你決定要不要開始。</p>
         <div class="hero-meta">
-          <span class="chip">兼職也能跑</span>
+          <span class="chip">下班後兼職</span>
+          <span class="chip">腳踏車跑單</span>
           <span class="chip">時間自己排</span>
           <span class="chip">三重／台北西</span>
         </div>
-        <a class="btn btn-primary" href="#apply">透過推薦連結去申請</a>
+        <a class="btn btn-primary" href="#apply">看推薦連結</a>
         <p class="hero-note">推薦獎勵依平台公告為準，本頁不保證任何獎金。</p>
-        <svg class="scooter" viewBox="0 0 360 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg class="bike" viewBox="0 0 360 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <ellipse cx="180" cy="138" rx="120" ry="10" fill="#e4d8c6"/>
-          <circle cx="80" cy="118" r="22" stroke="#2b2219" stroke-width="6"/>
-          <circle cx="80" cy="118" r="8" fill="#2b2219"/>
-          <circle cx="250" cy="118" r="22" stroke="#2b2219" stroke-width="6"/>
-          <circle cx="250" cy="118" r="8" fill="#2b2219"/>
-          <path d="M80 118h54l28-46h42" stroke="#2b2219" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M162 72h58l18 46" stroke="#2b2219" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-          <rect x="188" y="40" width="54" height="28" rx="8" fill="#c2410c"/>
-          <path d="M204 72v10" stroke="#2b2219" stroke-width="6" stroke-linecap="round"/>
-          <circle cx="148" cy="58" r="10" fill="#3d5a46"/>
-          <path d="M148 68c8 14 22 22 38 24" stroke="#2b2219" stroke-width="5" stroke-linecap="round"/>
-          <path d="M250 118c18-2 32-8 42-20" stroke="#c2410c" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="100" cy="116" r="22" stroke="#2b2219" stroke-width="6"/>
+          <circle cx="100" cy="116" r="7" fill="#2b2219"/>
+          <circle cx="252" cy="116" r="22" stroke="#2b2219" stroke-width="6"/>
+          <circle cx="252" cy="116" r="7" fill="#2b2219"/>
+          <path d="M100 116h52" stroke="#2b2219" stroke-width="7" stroke-linecap="round"/>
+          <path d="M100 116l46-50" stroke="#2b2219" stroke-width="7" stroke-linecap="round"/>
+          <path d="M152 116l-6-50" stroke="#2b2219" stroke-width="7" stroke-linecap="round"/>
+          <path d="M146 66h70" stroke="#2b2219" stroke-width="7" stroke-linecap="round"/>
+          <path d="M152 116l64-50" stroke="#2b2219" stroke-width="7" stroke-linecap="round"/>
+          <path d="M216 66l36 50" stroke="#2b2219" stroke-width="7" stroke-linecap="round"/>
+          <path d="M216 66v-18h30" stroke="#2b2219" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M132 56h28" stroke="#2b2219" stroke-width="6" stroke-linecap="round"/>
+          <path d="M146 56v10" stroke="#2b2219" stroke-width="6" stroke-linecap="round"/>
+          <rect x="72" y="68" width="46" height="28" rx="8" fill="#c2410c"/>
+          <path d="M95 96v20" stroke="#2b2219" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="246" cy="48" r="5" fill="#3d5a46"/>
         </svg>
       </div>
     </div>
@@ -448,17 +469,17 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19V8l8-4 8 4v11"/><path d="M9 19v-6h6v6"/></svg>
             </div>
             <div>
-              <h3>適合週末兼職</h3>
-              <p>不少人會利用週末或晚上的空檔跑單。重點是先衡量自己的體力和路程，再慢慢找到適合的節奏。</p>
+              <h3>適合下班後兼職</h3>
+              <p>不少人會利用下班後或週末的空檔跑單。重點是先衡量自己的體力和路程，再慢慢找到適合的節奏。</p>
             </div>
           </article>
           <article class="card icon-row">
             <div class="icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 16l2-7h10l2 7"/><circle cx="8" cy="18" r="2"/><circle cx="16" cy="18" r="2"/><path d="M7 9V6h6"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="17.5" cy="16.5" r="2.5"/><path d="M6.5 16.5h4L13.5 9h3"/><path d="M10.5 16.5 13.5 9l4 7.5"/><path d="M13.5 9V6.8h2.8"/></svg>
             </div>
             <div>
               <h3>用自己熟悉的交通方式</h3>
-              <p>一般是以機車為主。路況熟、路線熟，跑起來會比較安心，也比較好安排休息。</p>
+              <p>我自己是騎腳踏車跑單。用自己熟悉、安全的交通方式，跑起來會比較安心，也比較好安排休息。</p>
             </div>
           </article>
         </div>
@@ -474,8 +495,8 @@
           <article class="step">
             <div class="step-num">1</div>
             <div>
-              <h3>準備好基本文件和車輛</h3>
-              <p>通常會需要身分證、駕照、行照，以及符合規定的機車。請先核對證件是否在有效期限內，再開始申請。</p>
+              <h3>準備好基本文件和交通工具</h3>
+              <p>各平台要求不同，可能會需要身分證明，以及符合規定的交通工具（例如腳踏車或其他載具）。請先到官方申請頁核對條件與文件，再開始申請。</p>
             </div>
           </article>
           <article class="step">
@@ -489,7 +510,7 @@
             <div class="step-num">3</div>
             <div>
               <h3>上傳資料並完成訓練</h3>
-              <p>依平台要求上傳證件、車輛資料，並完成他們規定的說明或訓練課程。內容與審核時間都由平台決定。</p>
+              <p>依平台要求上傳證件與交通工具資料，並完成他們規定的說明或訓練課程。內容與審核時間都由平台決定。</p>
             </div>
           </article>
           <article class="step">
@@ -524,7 +545,7 @@
           </article>
           <article class="card">
             <h3>手機支架和電量</h3>
-            <p>跑單幾乎離不開導航和接單 App。建議準備穩固的手機支架，以及行動電源或車用充電線，避免中途沒電。</p>
+            <p>跑單幾乎離不開導航和接單 App。建議準備穩固的手機支架，以及行動電源，避免中途沒電。</p>
           </article>
           <article class="card">
             <h3>怎麼選活動範圍</h3>
@@ -536,13 +557,24 @@
 
     <section id="apply">
       <div class="wrap">
+        <p class="section-kicker">REFERRAL</p>
+        <h2>透過我的連結申請</h2>
+        <p class="section-intro referral-intro">如果你決定開始跑單，可以用下面的推薦連結或推薦碼註冊。Uber Eats 和 Lalamove 我都有在跑，你可以依自己的需求選擇。平台會依他們的規則記錄推薦關係。</p>
         <div class="referral">
-          <p class="section-kicker">REFERRAL</p>
-          <h2>透過我的連結申請 Uber Eats 外送合作夥伴</h2>
-          <p style="margin-bottom: 1.2rem;">如果你決定開始跑單，可以用下面的推薦連結前往註冊。平台會依他們的規則記錄推薦關係。推薦獎勵依平台公告為準。</p>
-          <p style="margin-bottom: 1.2rem;">我收到的邀請說明：新合作夥伴在 20 天內完成首 80 趟外送，可額外賺取 $2,000（依 Uber 公告為準）。邀請碼：<strong>947z4b1</strong></p>
+          <p class="section-kicker">UBER EATS</p>
+          <h2>申請 Uber Eats 外送合作夥伴</h2>
+          <p style="margin-bottom: 1.2rem;">可以用下面的推薦連結前往註冊。平台會依他們的規則記錄推薦關係。推薦獎勵依平台公告為準。</p>
+          <p style="margin-bottom: 1.2rem;">我收到的邀請說明：新合作夥伴在 20 天內完成首 80 趟外送，可額外賺取 $2,000（依 Uber 公告為準）。邀請碼：<strong class="code">947z4b1</strong></p>
           <a class="btn btn-primary" data-ref="ubereats" href="https://www.uber.com/signup/drive/deliver/?invite_code=947z4b1">前往 Uber Eats 申請</a>
           <p class="fine">獎勵條件與發放方式以官方公告為準，本站不做任何保證。</p>
+        </div>
+        <div class="referral">
+          <p class="section-kicker">LALAMOVE</p>
+          <h2>申請 Lalamove 司機夥伴</h2>
+          <p style="margin-bottom: 1.2rem;">想跑拉拉的話，請透過下面的連結下載 Lalamove 司機版 App，並務必在註冊頁面使用我的推薦碼。請在 <strong>2026年11月30日</strong> 前完成註冊並通過審核，才視為推薦成功。</p>
+          <p style="margin-bottom: 1.2rem;">我的推薦碼：<strong class="code">23DBWF</strong><br>請使用本人手機註冊接單，個人裝置請勿讓非本人登入，以免推薦失敗。</p>
+          <a class="btn btn-primary" data-ref="lalamove" href="https://lalamove-driver.onelink.me/zfl4/zzqvrvgv?u=2&amp;rc=23DBWF&amp;fromShare=1&amp;refer_platform=app">前往下載 Lalamove 司機版 App</a>
+          <p class="fine">實際獎勵依 Lalamove 公告為準，本站不做任何保證。</p>
         </div>
       </div>
     </section>
@@ -552,20 +584,20 @@
         <p class="section-kicker">FAQ</p>
         <h2>常見問題</h2>
         <details>
-          <summary>一定要有機車和駕照嗎？</summary>
-          <p>一般申請外送合作夥伴時，會需要有效的身分證明、駕照、行照，以及符合規定的車輛。實際資格以官方申請頁的說明為準。</p>
+          <summary>腳踏車也可以跑嗎？</summary>
+          <p>可以。我自己就是下班後騎腳踏車跑單，車是向 Uber Bike 租的。不同平台、不同載具的申請條件可能不一樣，實際資格請以官方申請頁的說明為準。</p>
         </details>
         <details>
-          <summary>可以只在週末跑嗎？</summary>
-          <p>很多人都是利用週末或下班後的空檔上線。至於何時能接單、如何排班，請依照平台 App 裡的規則來安排。</p>
+          <summary>可以只在下班後或週末跑嗎？</summary>
+          <p>可以。很多人都是利用下班後或週末的空檔上線。至於何時能接單、如何排班，請依照平台 App 裡的規則來安排。</p>
         </details>
         <details>
           <summary>推薦獎勵怎麼算？</summary>
           <p>獎勵條件、金額和發放時間都由平台訂定，而且可能調整。請以官方公告為準，本站不保證你一定會拿到獎勵，也不提供獎金數字。</p>
         </details>
         <details>
-          <summary>這個網站跟 Uber 有關係嗎？</summary>
-          <p>沒有。這是我個人整理的入門說明，不是 Uber 的官方網站，也不代表官方立場。申請與獎勵事宜，請直接向平台確認。</p>
+          <summary>這個網站跟 Uber、Lalamove 有關係嗎？</summary>
+          <p>沒有。這是我個人整理的入門說明，不是 Uber 或 Lalamove 的官方網站，也不代表官方立場。申請與獎勵事宜，請直接向平台確認。</p>
         </details>
       </div>
     </section>
@@ -573,7 +605,7 @@
 
   <footer>
     <div class="wrap">
-      <p><strong>「小安的外送日記」個人頁面。</strong>本站與 Uber 無關，不是官方網站，也不代表其官方立場。本頁未使用任何官方標誌，版面與用色皆為自行設計。</p>
+      <p><strong>「小安的外送日記」個人頁面。</strong>本站與 Uber、Lalamove 無關，不是官方網站，也不代表其官方立場。本頁未使用任何官方標誌，版面與用色皆為自行設計。</p>
       <p>申請資格、流程、活動範圍與推薦獎勵，一概以平台最新公告為準。本頁僅供參考，不構成邀約或保證。</p>
     </div>
   </footer>
