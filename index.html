@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="外送員新手入門：蘇子安整理的兼職跑單申請準備、跑單心得與 Uber Eats 推薦連結。本站為個人頁面，非官方網站。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="外送員新手入門｜子安的跑單筆記">
+  <meta property="og:description" content="兼職跑單怎麼開始、申請要準備什麼、新手跑單心得，附 Uber Eats 推薦連結。">
+  <meta property="og:image" content="https://firsty1107-ai.github.io/rider-guide/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://firsty1107-ai.github.io/rider-guide/">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>外送員新手入門｜子安的跑單筆記</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --bg-deep: #2b2219;
+      --paper: #fffaf3;
+      --ink: #1c1612;
+      --muted: #5c534a;
+      --line: #e4dbcf;
+      --accent: #c2410c;
+      --accent-dark: #9a3412;
+      --accent-soft: #fde8d8;
+      --forest: #3d5a46;
+      --forest-soft: #e7efe9;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(43, 34, 25, 0.08);
+      --max: 40rem;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Noto Sans TC", "Noto Sans CJK TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    a { color: var(--accent-dark); }
+
+    img, svg { display: block; max-width: 100%; }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(244, 239, 230, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--ink);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-mark {
+      width: 2.1rem;
+      height: 2.1rem;
+      border-radius: 0.7rem;
+      background: var(--bg-deep);
+      color: #f8efe4;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .brand-mark svg { width: 1.2rem; height: 1.2rem; }
+
+    .header-cta {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+      background: var(--accent);
+      text-decoration: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .header-cta:hover { background: var(--accent-dark); }
+
+    .hero {
+      background:
+        radial-gradient(1200px 280px at 80% -20%, #e8c9a8 0%, transparent 60%),
+        linear-gradient(180deg, #efe6d8 0%, var(--bg) 100%);
+      padding: 2.4rem 0 1.2rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: none;
+      color: var(--accent-dark);
+      background: var(--accent-soft);
+      border-radius: 999px;
+      padding: 0.25rem 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 7vw, 2.6rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.85rem;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .chip {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--forest);
+      background: var(--forest-soft);
+      border-radius: 999px;
+      padding: 0.28rem 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      width: 100%;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 1rem 1.25rem;
+      font-size: 1.05rem;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(194, 65, 12, 0.28);
+    }
+
+    .btn-primary:hover { background: var(--accent-dark); }
+
+    .btn-dark {
+      background: var(--bg-deep);
+      color: #fff;
+    }
+
+    .btn-dark:hover { background: #1a140f; }
+
+    .hero-note {
+      margin-top: 0.75rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .scooter {
+      margin: 2rem auto 0;
+      width: min(100%, 22rem);
+    }
+
+    section { padding: 2.4rem 0 0; }
+
+    .section-kicker {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      line-height: 1.3;
+      margin-bottom: 0.7rem;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.15rem 1.2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .card p { color: var(--muted); font-size: 0.98rem; }
+
+    .icon-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+    }
+
+    .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.85rem;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .icon.forest {
+      background: var(--forest-soft);
+      color: var(--forest);
+    }
+
+    .steps { counter-reset: step; display: grid; gap: 0.85rem; }
+
+    .step {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.15rem 1.2rem 1.15rem 1.15rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.9rem;
+      align-items: start;
+      box-shadow: var(--shadow);
+    }
+
+    .step-num {
+      width: 2.1rem;
+      height: 2.1rem;
+      border-radius: 999px;
+      background: var(--bg-deep);
+      color: #fff;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      font-size: 0.95rem;
+    }
+
+    .step h3 { font-size: 1.05rem; margin-bottom: 0.25rem; }
+    .step p { color: var(--muted); font-size: 0.98rem; }
+
+    .callout {
+      margin-top: 1rem;
+      background: #fff6e8;
+      border: 1px solid #f0dfc2;
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      color: #5a4630;
+      font-size: 0.95rem;
+    }
+
+    .referral {
+      margin-top: 2.4rem;
+      background: var(--bg-deep);
+      color: #f8efe4;
+      border-radius: 1.5rem;
+      padding: 1.5rem 1.25rem 1.4rem;
+    }
+
+    .referral .section-kicker { color: #f0b27a; }
+    .referral h2 { color: #fffaf3; }
+    .referral p { color: #d7ccc0; }
+    .referral .fine { margin-top: 0.85rem; font-size: 0.85rem; color: #cbbbaa; }
+
+    .faq details {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 0.2rem 1.1rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+      padding: 0.95rem 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .faq summary::-webkit-details-marker { display: none; }
+
+    .faq summary::after {
+      content: "+";
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .faq details[open] summary::after { content: "–"; }
+
+    .faq details p {
+      color: var(--muted);
+      padding-bottom: 1rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 2rem 0 2.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer strong { color: var(--ink); font-weight: 700; }
+
+    footer p + p { margin-top: 0.7rem; }
+  </style>
+</head>
+<body>
+  <script>
+    const REFERRAL = {
+      UBEREATS_REFERRAL_LINK: "https://www.uber.com/signup/drive/deliver/?invite_code=947z4b1"
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-ref='ubereats']").forEach((el) => {
+        el.setAttribute("href", REFERRAL.UBEREATS_REFERRAL_LINK);
+      });
+    });
+  </script>
+
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6.5" cy="17" r="2.2"/>
+            <circle cx="17.5" cy="17" r="2.2"/>
+            <path d="M8.7 17h6.2M4 17H3l2.2-7.2A1.5 1.5 0 0 1 6.6 8.7H12l1.8 5.2h3.2a2 2 0 0 1 1.9 1.4L19.5 17"/>
+            <path d="M12 8.7V6.4h3.2"/>
+          </svg>
+        </span>
+        外送員新手入門
+      </a>
+      <a class="header-cta" href="#apply">立刻申請</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <p class="eyebrow">週末兼職・彈性工時</p>
+        <h1>想利用空檔跑外送？先看這份老實的新手筆記</h1>
+        <p class="lead">我是子安（蘇子安），平常在週末跑單，活動範圍多半在三重和台北西附近。這頁把申請前要準備的東西，以及我實際跑下來的心得整理給你，方便你決定要不要開始。</p>
+        <div class="hero-meta">
+          <span class="chip">兼職也能跑</span>
+          <span class="chip">時間自己排</span>
+          <span class="chip">三重／台北西</span>
+        </div>
+        <a class="btn btn-primary" href="#apply">透過推薦連結去申請</a>
+        <p class="hero-note">推薦獎勵依平台公告為準，本頁不保證任何獎金。</p>
+        <svg class="scooter" viewBox="0 0 360 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="180" cy="138" rx="120" ry="10" fill="#e4d8c6"/>
+          <circle cx="80" cy="118" r="22" stroke="#2b2219" stroke-width="6"/>
+          <circle cx="80" cy="118" r="8" fill="#2b2219"/>
+          <circle cx="250" cy="118" r="22" stroke="#2b2219" stroke-width="6"/>
+          <circle cx="250" cy="118" r="8" fill="#2b2219"/>
+          <path d="M80 118h54l28-46h42" stroke="#2b2219" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M162 72h58l18 46" stroke="#2b2219" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="188" y="40" width="54" height="28" rx="8" fill="#c2410c"/>
+          <path d="M204 72v10" stroke="#2b2219" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="148" cy="58" r="10" fill="#3d5a46"/>
+          <path d="M148 68c8 14 22 22 38 24" stroke="#2b2219" stroke-width="5" stroke-linecap="round"/>
+          <path d="M250 118c18-2 32-8 42-20" stroke="#c2410c" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <section id="why">
+      <div class="wrap">
+        <p class="section-kicker">WHY</p>
+        <h2>為什麼可以跑外送</h2>
+        <p class="section-intro">對想在本業之外多一份彈性收入的人來說，外送最吸引人的是「時間可以自己排」，而不是保證每天都有固定單量。</p>
+        <div class="card-grid">
+          <article class="card icon-row">
+            <div class="icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+            </div>
+            <div>
+              <h3>工時彈性</h3>
+              <p>可以依自己的行程決定何時上線、何時休息，比較容易和既有工作或家庭安排並存。</p>
+            </div>
+          </article>
+          <article class="card icon-row">
+            <div class="icon forest" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19V8l8-4 8 4v11"/><path d="M9 19v-6h6v6"/></svg>
+            </div>
+            <div>
+              <h3>適合週末兼職</h3>
+              <p>不少人會利用週末或晚上的空檔跑單。重點是先衡量自己的體力和路程，再慢慢找到適合的節奏。</p>
+            </div>
+          </article>
+          <article class="card icon-row">
+            <div class="icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 16l2-7h10l2 7"/><circle cx="8" cy="18" r="2"/><circle cx="16" cy="18" r="2"/><path d="M7 9V6h6"/></svg>
+            </div>
+            <div>
+              <h3>用自己熟悉的交通方式</h3>
+              <p>一般是以機車為主。路況熟、路線熟，跑起來會比較安心，也比較好安排休息。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="steps">
+      <div class="wrap">
+        <p class="section-kicker">STEPS</p>
+        <h2>申請步驟</h2>
+        <p class="section-intro">以下是常見的準備方向，實際資格、文件和流程請一定要依照平台官方頁面與 App 內指示完成。</p>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h3>準備好基本文件和車輛</h3>
+              <p>通常會需要身分證、駕照、行照，以及符合規定的機車。請先核對證件是否在有效期限內，再開始申請。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h3>下載官方 App 並註冊</h3>
+              <p>到官方管道下載外送夥伴用的 App，依畫面提示建立帳號。若你是透過本頁推薦連結進入，註冊時平台才比較有機會記錄推薦關係。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h3>上傳資料並完成訓練</h3>
+              <p>依平台要求上傳證件、車輛資料，並完成他們規定的說明或訓練課程。內容與審核時間都由平台決定。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-num">4</div>
+            <div>
+              <h3>審核通過後再開始接單</h3>
+              <p>等到官方通知通過，再依 App 指示上線。還沒核准前，不要急著上路，以免資料不完整或資格不符。</p>
+            </div>
+          </article>
+        </div>
+        <p class="callout">提醒：各平台的申請條件、所需文件和訓練內容可能調整，一切以官方最新說明為準，請跟隨平台自己的步驟操作。</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <div class="wrap">
+        <p class="section-kicker">TIPS</p>
+        <h2>新手跑單心得</h2>
+        <p class="section-intro">這些是我自己跑下來覺得有用的小事，不是官方教學，供你參考就好。</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>先認識尖峰時段</h3>
+            <p>用餐時段通常比較忙碌。剛開始不必追著最滿的時段跑，先熟悉流程、取餐動線和停車位置，再慢慢拉長工時。</p>
+          </article>
+          <article class="card">
+            <h3>安全比趕單重要</h3>
+            <p>遵守交通規則，下雨、夜間或路況不熟時放慢速度。訂單會一直有，安全到不了就沒有下一張單。</p>
+          </article>
+          <article class="card">
+            <h3>雨具一定要準備</h3>
+            <p>台灣天氣說變就變，雨衣、防水鞋套和袋子的防水措施最好隨身帶著，免得人或餐點都濕掉。</p>
+          </article>
+          <article class="card">
+            <h3>手機支架和電量</h3>
+            <p>跑單幾乎離不開導航和接單 App。建議準備穩固的手機支架，以及行動電源或車用充電線，避免中途沒電。</p>
+          </article>
+          <article class="card">
+            <h3>怎麼選活動範圍</h3>
+            <p>像三重和台北西，路況、停車難度和餐廳分布都不太一樣。沒有絕對比較好的區域，建議先從自己最熟的路段開始，熟悉之後再視情況調整。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply">
+      <div class="wrap">
+        <div class="referral">
+          <p class="section-kicker">REFERRAL</p>
+          <h2>透過我的連結申請 Uber Eats 外送合作夥伴</h2>
+          <p style="margin-bottom: 1.2rem;">如果你決定開始跑單，可以用下面的推薦連結前往註冊。平台會依他們的規則記錄推薦關係。推薦獎勵依平台公告為準。</p>
+          <p style="margin-bottom: 1.2rem;">我收到的邀請說明：新合作夥伴在 20 天內完成首 80 趟外送，可額外賺取 $2,000（依 Uber 公告為準）。邀請碼：<strong>947z4b1</strong></p>
+          <a class="btn btn-primary" data-ref="ubereats" href="https://www.uber.com/signup/drive/deliver/?invite_code=947z4b1">前往 Uber Eats 申請</a>
+          <p class="fine">獎勵條件與發放方式以官方公告為準，本站不做任何保證。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="wrap">
+        <p class="section-kicker">FAQ</p>
+        <h2>常見問題</h2>
+        <details>
+          <summary>一定要有機車和駕照嗎？</summary>
+          <p>一般申請外送合作夥伴時，會需要有效的身分證明、駕照、行照，以及符合規定的車輛。實際資格以官方申請頁的說明為準。</p>
+        </details>
+        <details>
+          <summary>可以只在週末跑嗎？</summary>
+          <p>很多人都是利用週末或下班後的空檔上線。至於何時能接單、如何排班，請依照平台 App 裡的規則來安排。</p>
+        </details>
+        <details>
+          <summary>推薦獎勵怎麼算？</summary>
+          <p>獎勵條件、金額和發放時間都由平台訂定，而且可能調整。請以官方公告為準，本站不保證你一定會拿到獎勵，也不提供獎金數字。</p>
+        </details>
+        <details>
+          <summary>這個網站跟 Uber 有關係嗎？</summary>
+          <p>沒有。這是我個人整理的入門說明，不是 Uber 的官方網站，也不代表官方立場。申請與獎勵事宜，請直接向平台確認。</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>子安（蘇子安）的個人頁面。</strong>本站與 Uber 無關，不是官方網站，也不代表其官方立場。本頁未使用任何官方標誌，版面與用色皆為自行設計。</p>
+      <p>申請資格、流程、活動範圍與推薦獎勵，一概以平台最新公告為準。本頁僅供參考，不構成邀約或保證。</p>
+    </div>
+  </footer>
+</body>
+</html>
